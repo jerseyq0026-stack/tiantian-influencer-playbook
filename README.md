@@ -311,14 +311,18 @@ npx skills add <your-github-username>/tiantian-influencer-playbook
 
 ### 方式二：手动安装
 
-展开查看各 runtime 的 skills 目录
+> ⚠️ 下表列的是**支持开源 Agent Skills 协议（agentskills.io）的 runtime**。
+> Trae、Work body、Lobe Chat 等其他 AI agent 也可以跑这个 skill，
+> 核心都是把 `SKILL.md` + `references/` 放进对应的 skill 目录。
 
-| Runtime     | 安装路径                                                         |
-| ----------- | ------------------------------------------------------------ |
-| Claude Code | `~/.claude/skills/tiantian-influencer-playbook/`             |
-| Codex CLI   | `~/.codex/skills/tiantian-influencer-playbook/`              |
-| Cursor      | `~/.cursor/skills/tiantian-influencer-playbook/`             |
-| OpenClaw    | `~/.openclaw/workspace/skills/tiantian-influencer-playbook/` |
+| Runtime     | 安装路径                                                         | 协议           |
+| ----------- | ------------------------------------------------------------ | ------------ |
+| Claude Code | `~/.claude/skills/tiantian-influencer-playbook/`             | Agent Skills |
+| Codex CLI   | `~/.codex/skills/tiantian-influencer-playbook/`              | Agent Skills |
+| Cursor      | `~/.cursor/skills/tiantian-influencer-playbook/`             | Agent Skills |
+| OpenClaw    | `~/.openclaw/workspace/skills/tiantian-influencer-playbook/` | Agent Skills |
+| **Trae**    | `<workspace>/.trae/skills/tiantian-influencer-playbook/`     | Trae 原生      |
+| Work body   | 需手动集成，把 SKILL.md 内容加入 system prompt                          | 内部格式         |
 
 ```bash
 git clone https://github.com/<your-github-username>/tiantian-influencer-playbook <对应路径>
